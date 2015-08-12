@@ -41,7 +41,7 @@ public class ViewMenuPrincipal extends JFrame {
 	
 	public ViewMenuPrincipal() {
 		setTitle("AdminTools");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(ViewMenuPrincipal.class.getResource("/View/imagen/logo-admin-tool1.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(ViewMenuPrincipal.class.getResource("/view/recursos/logo-admin-tool1.png")));
 		
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
@@ -172,7 +172,7 @@ public class ViewMenuPrincipal extends JFrame {
 		   public void paintComponent(Graphics g){
 		      Dimension tamanio = getSize();
 		      ImageIcon imagenFondo = new ImageIcon(getClass().
-		      getResource("/View/imagen/fondo-sistema.jpg"));
+		      getResource("/view/recursos/fondo-sistema.jpg"));
 		      g.drawImage(imagenFondo.getImage(), 0, 0,
 		      tamanio.width, tamanio.height, null);
 		      setOpaque(false);

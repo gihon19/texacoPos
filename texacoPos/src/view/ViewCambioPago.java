@@ -86,7 +86,7 @@ public class ViewCambioPago extends JDialog {
 		txtCambio.setColumns(10);
 		
 		//imagen para el boton efectivo
-		ImageIcon imgEfectivo=new ImageIcon(BotonCancelar.class.getResource("/View/imagen/icono_pago_efectivo.png"));
+		ImageIcon imgEfectivo=new ImageIcon(BotonCancelar.class.getResource("/view/recursos/icono_pago_efectivo.png"));
 		
 		Image image = imgEfectivo.getImage();
 		    // reduce by 50%
@@ -94,7 +94,7 @@ public class ViewCambioPago extends JDialog {
 		imgEfectivo.setImage(image);
 		
 		//imagen para el boton tarjeta de credito
-		ImageIcon imgTarjeta=new ImageIcon(BotonCancelar.class.getResource("/View/imagen/credit-card-icon.png"));
+		ImageIcon imgTarjeta=new ImageIcon(BotonCancelar.class.getResource("/view/recursos/credit-card-icon.png"));
 		
 		image = imgTarjeta.getImage();
 		    // reduce by 50%
@@ -208,9 +208,9 @@ public class ViewCambioPago extends JDialog {
 		txtCambio.setActionCommand("IMPRIMIR");
 		
 	}
-	public static void main(String arg[]){
+	/*public static void main(String arg[]){
 		ViewCambioPago viewPago=new ViewCambioPago(null);
 		CtlCambioPago ctlPago=new CtlCambioPago(viewPago, new BigDecimal(1000));
 		boolean resulPago=ctlPago.pagar();
-	}
+	}*/
 }

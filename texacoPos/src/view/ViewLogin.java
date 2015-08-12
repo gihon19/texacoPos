@@ -40,7 +40,7 @@ public class ViewLogin extends JDialog{
 	public ViewLogin()
 		{
 		super(null,"LOGIN",Dialog.ModalityType.DOCUMENT_MODAL);
-		setIconImage(Toolkit.getDefaultToolkit().getImage(ViewLogin.class.getResource("/View/imagen/logo-admin-tool1.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(ViewLogin.class.getResource("/view/recursos/logo-admin-tool1.png")));
 		
 		Container contenedor = getContentPane();
 		getContentPane().setLayout(null);
@@ -59,7 +59,7 @@ public class ViewLogin extends JDialog{
 		panel.add(lblLogin);
 		
 		
-		ImageIcon imgLogo=new ImageIcon(BotonCancelar.class.getResource("/View/imagen/logo-admin-tool1.png"));
+		ImageIcon imgLogo=new ImageIcon(BotonCancelar.class.getResource("/view/recursos/logo-admin-tool1.png"));
 		Image image = imgLogo.getImage();
 		
 		image = image.getScaledInstance(image.getWidth(null)/22, image.getHeight(null)/22, Image.SCALE_SMOOTH);

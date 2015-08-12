@@ -90,7 +90,7 @@ public class ViewFacturar extends JDialog {
 	public ViewFacturar(Window view) {
 		
 		super(view,"Facturar",Dialog.ModalityType.DOCUMENT_MODAL);
-		setIconImage(Toolkit.getDefaultToolkit().getImage(ViewFacturar.class.getResource("/View/imagen/logo-admin-tool1.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(ViewFacturar.class.getResource("/view/recursos/logo-admin-tool1.png")));
 		panelAcciones=new JPanel();
 		panelAcciones.setBorder(new TitledBorder(new LineBorder(new Color(130, 135, 144)), "Opciones", TitledBorder.LEFT, TitledBorder.TOP, null, new Color(0, 0, 0)));
 		panelAcciones.setBounds(20, 11, 178, 459);
@@ -142,12 +142,12 @@ public class ViewFacturar extends JDialog {
 		
 		btnCierreCaja = new JButton("F6 Cierre");
 		btnCierreCaja.setHorizontalAlignment(SwingConstants.LEFT);
-		btnCierreCaja.setIcon(new ImageIcon(ViewFacturar.class.getResource("/View/imagen/caja.png")));
+		btnCierreCaja.setIcon(new ImageIcon(ViewFacturar.class.getResource("/view/recursos/caja.png")));
 		btnCierreCaja.setBounds(10, 334, 158, 38);
 		panelAcciones.add(btnCierreCaja);
 		
 		btnPendientes = new JButton("F5 Pendientes");
-		btnPendientes.setIcon(new ImageIcon(ViewFacturar.class.getResource("/View/imagen/lista.png")));
+		btnPendientes.setIcon(new ImageIcon(ViewFacturar.class.getResource("/view/recursos/lista.png")));
 		btnPendientes.setHorizontalAlignment(SwingConstants.LEFT);
 		btnPendientes.setBounds(10, 272, 158, 38);
 		panelAcciones.add(btnPendientes);
