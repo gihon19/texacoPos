@@ -29,6 +29,7 @@ import javax.swing.JPopupMenu;
 import view.botones.BotonAgregar;
 import view.botones.BotonBuscar;
 import view.botones.BotonEliminar;
+import view.botones.BotonLimpiar;
 import view.rendes.TablaRenderizadorProveedor;
 import view.tablemodel.TableModeloArticulo;
 import controlador.CtlArticuloBuscar;
@@ -90,8 +91,8 @@ public class ViewListaArticulo extends JDialog {
         btnEliminar.setEnabled(false);
         panelAccion.add(btnEliminar);
         
-        btnLimpiar = new JButton();
-        btnLimpiar.setIcon(new ImageIcon(ViewListaArticulo.class.getResource("/View/imagen/clear.png"))); // NOI18N
+        btnLimpiar = new BotonLimpiar();
+       // btnLimpiar.setIcon(new ImageIcon(ViewListaArticulo.class.getResource("/View/imagen/clear.png"))); // NOI18N
         panelAccion.add(btnLimpiar);
         btnLimpiar.setEnabled(false);
         

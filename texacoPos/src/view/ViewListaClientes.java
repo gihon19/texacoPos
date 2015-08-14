@@ -23,6 +23,7 @@ import javax.swing.border.TitledBorder;
 import view.botones.BotonAgregar;
 import view.botones.BotonBuscar;
 import view.botones.BotonEliminar;
+import view.botones.BotonLimpiar;
 import view.tablemodel.TablaModeloCliente;
 import controlador.CtlClienteBuscar;
 import controlador.CtlClienteLista;
@@ -81,8 +82,8 @@ public class ViewListaClientes extends JDialog {
         btnEliminar.setEnabled(false);
         panelAccion.add(btnEliminar);
         
-        btnLimpiar = new JButton();
-        btnLimpiar.setIcon(new ImageIcon(ViewListaClientes.class.getResource("/View/imagen/clear.png"))); // NOI18N
+        btnLimpiar = new BotonLimpiar();
+        //btnLimpiar.setIcon(new ImageIcon(ViewListaClientes.class.getResource("/View/imagen/clear.png"))); // NOI18N
         panelAccion.add(btnLimpiar);
         
         //configuracion del panel busqueda

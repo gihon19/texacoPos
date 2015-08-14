@@ -26,6 +26,7 @@ import javax.swing.border.TitledBorder;
 import view.botones.BotonAgregar;
 import view.botones.BotonBuscar;
 import view.botones.BotonEliminar;
+import view.botones.BotonLimpiar;
 import view.rendes.TablaRenderizadorProveedor;
 import view.tablemodel.TablaModeloMarca;
 import controlador.CtlMarcaBuscar;
@@ -95,8 +96,8 @@ public class ViewListaMarca extends JDialog {
         btnEliminar.setEnabled(false);
         panelAccion.add(btnEliminar);
         
-        btnLimpiar = new JButton();
-        btnLimpiar.setIcon(new ImageIcon(ViewListaMarca.class.getResource("/View/imagen/clear.png"))); // NOI18N
+        btnLimpiar = new BotonLimpiar();
+        //btnLimpiar.setIcon(new ImageIcon(ViewListaMarca.class.getResource("/View/imagen/clear.png"))); // NOI18N
         panelAccion.add(btnLimpiar);
         
       //configuracion del panel busqueda

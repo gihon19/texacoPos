@@ -35,6 +35,7 @@ import javax.swing.JRadioButton;
 import view.botones.BotonAgregar;
 import view.botones.BotonBuscar;
 import view.botones.BotonEliminar;
+import view.botones.BotonLimpiar;
 import view.rendes.TablaRenderizadorProveedor;
 import view.tablemodel.TablaModeloProveedor;
 
@@ -131,8 +132,8 @@ public class ViewListaProveedor extends JDialog {
         btnEliminar.setEnabled(false);
         panelAccion.add(btnEliminar);
         
-        btnLimpiar = new JButton();
-        btnLimpiar.setIcon(new ImageIcon(ViewListaProveedor.class.getResource("/View/imagen/clear.png"))); // NOI18N
+        btnLimpiar = new BotonLimpiar();
+        //btnLimpiar.setIcon(new ImageIcon(ViewListaProveedor.class.getResource("/View/imagen/clear.png"))); // NOI18N
         panelAccion.add(btnLimpiar);
 		
 		JScrollPane scrollPane = new JScrollPane(tablaProvedores);
